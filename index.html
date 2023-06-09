@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./img/logo.jpg">
+    <title>Text Analyzer</title>
+</head>
+<body>
+  <div class="background">
+    <img src="./img/istockphoto-1200976833-612x612.jpg" alt="">
+  </div>
+  <div class="container">
+    <div class="analyzer">
+      <h2><img src="./img/logo.jpg" alt="logo"> Text Analyzer</h2>
+      <form id="word-counter">
+        <div class="form-group">
+          <p>Input a text passage to get a total word count:</p>
+          <textarea id="text-passage" name="text-passage" class="form-control"></textarea>
+          <div class="mt-3">
+            <p>Optionally enter a word to count the number of times it occurs in the passage:</p>
+            <input type="text" id="word" name="word" class="form-control">
+          </div>
+          <div class="mt-3">
+            <button type="submit" class="btn">Submit Survey</button>
+          </div>
+        </div>
+      </form>
+      <div class="wordsList p-3">
+        <h4>Most Common Words</h4>
+        <div id="mostUsed">
+        </div>
+      </div>
+      <div class="mt-1">
+        <p>Total Word Count: <span id="total-count"></span></p>
+      </div>
+      <div class="mt-1">
+        <p>Selected Word Count: <span id="selected-count"></span></p>
+      </div>
+      <div class="mt-1">
+        <h5>Passage</h5>
+        <span id="bolded-passage"></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
