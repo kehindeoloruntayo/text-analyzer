@@ -1,5 +1,5 @@
 # _Text Analyzer_
-### _Text Analyser provides several functions for word processing and text analysis. It removes offensive words, extracts common words, bolds occurrences of a specific word, counts the total number of words, and counts the occurrences of a specific word in a text. It also handles form submission and updates the UI with the results._ ygygiuguigiugiugiu
+### _Text Analyser provides several functions for word processing and text analysis. It removes offensive words, extracts common words, bolds occurrences of a specific word, counts the total number of words, and counts the occurrences of a specific word in a text. It also handles form submission and updates the UI with the results._
 
 ## Technology used
 * _GIT_
