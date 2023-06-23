@@ -9,6 +9,11 @@
 * _JAVASCRIPT_
 * _JQUERY_
 
+## Setup/Installation Requirements
+* _Clone this repository to your desktop._
+* _Navigate to the top level of the directory._
+* _Open the index.html file in your browser._
+
 ## Contact
 * _NAME: Oloruntayo Kehinde_
 * _PHONE: 07043741067_

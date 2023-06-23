@@ -1,12 +1,19 @@
 // Business Logic
   let offensiveWords = ['zoinks', 'muppeteer', 'biffaroni', 'loopdaloop', 'nigga', 'fuck', 'bastard'];
 
+  function getWordsFromText(text) {
+    let words = text.toLowerCase().split(' ')
+      .map(word => word.trim())
+      .filter(word => word.length > 0);
+    return words;
+  }  
+
   function getMostCommonWords(text) {
     // Remove offensive words
     text = removeOffensiveWords(text);
 
     // Extract words from the text
-    let words = text.toLowerCase().match(/\b\w+\b/g);
+    let words = getWordsFromText(text);
 
     // Count the occurrences of each word
     let wordCounts = {};
@@ -67,27 +74,12 @@
     }
     return boldedWords.join(" ");
   }
-  
-   
-  // function wordCounter(text) {
-  //   if (text.trim().length === 0) {
-  //     return 0;
-  //   }
-  //   let wordCount = 0;
-  //   const wordArray = text.split(" ");
-  //   wordArray.forEach(function(element) {
-  //     if (!Number(element)) {
-  //       wordCount++;
-  //     }
-  //   });
-  //   return wordCount;
-  // }
 
   function wordCounter(text) {
     if (text.trim().length === 0) {
       return 0;
     }
-    const wordArray = text.split(/\s+/).filter(word => word.trim().length > 0 && isNaN(word));
+    const wordArray = text.split(" ").filter(word => word.trim().length > 0 && isNaN(word));
     return wordArray.length;
   } 
   
